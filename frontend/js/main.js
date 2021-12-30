@@ -38,7 +38,7 @@ $(document).on("click", ".js-toggle-modal", function(e) {
     const text = $(".js-post-text").val().trim()
     const $btn = $(this)
 
-    if (text.length == 0) {
+    if (!text.length) {
         return false
     } 
 
